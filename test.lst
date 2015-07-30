@@ -1,0 +1,109 @@
+   1               		.file	"test.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 8091 6400 		lds r24,100
+  25 0004 8161      		ori r24,lo8(17)
+  26 0006 8093 6400 		sts 100,r24
+  27               	.LM3:
+  28 000a 8091 6500 		lds r24,101
+  29 000e 8160      		ori r24,lo8(1)
+  30 0010 8093 6500 		sts 101,r24
+  31               	.LBB34:
+  32               	.LBB35:
+  33               	.LBB36:
+  34               	.LBB37:
+  35               	.LBB38:
+  36               	.LBB39:
+  37               	.LM4:
+  38 0014 2CEA      		ldi r18,lo8(2220)
+  39 0016 38E0      		ldi r19,hi8(2220)
+  40               	.LBE39:
+  41               	.LBE38:
+  42               	.LBE37:
+  43               	.LBE36:
+  44               	.LBE35:
+  45               	.LBE34:
+  46               	.LBB45:
+  47               	.LBB46:
+  48               	.LBB47:
+  49               	.LBB48:
+  50               	.LM5:
+  51 0018 4AE1      		ldi r20,lo8(26)
+  52               	.L2:
+  53               	.LBE48:
+  54               	.LBE47:
+  55               	.LBE46:
+  56               	.LBE45:
+  57               	.LM6:
+  58 001a 8091 6500 		lds r24,101
+  59 001e 8061      		ori r24,lo8(16)
+  60 0020 8093 6500 		sts 101,r24
+  61               	.LBB52:
+  62               	.LBB44:
+  63               	.LBB43:
+  64               	.LBB42:
+  65               	.LBB41:
+  66               	.LBB40:
+  67               	.LM7:
+  68 0024 C901      		movw r24,r18
+  69               	.LVL0:
+  70               	/* #APP */
+  71               	 ;  105 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  72 0026 0197      		1: sbiw r24,1
+  73 0028 01F4      		brne 1b
+  74               	 ;  0 "" 2
+  75               	/* #NOAPP */
+  76               	.LBE40:
+  77               	.LBE41:
+  78               	.LBE42:
+  79               	.LBE43:
+  80               	.LBE44:
+  81               	.LBE52:
+  82               	.LM8:
+  83 002a 8091 6500 		lds r24,101
+  84               	.LVL1:
+  85 002e 8F7E      		andi r24,lo8(-17)
+  86 0030 8093 6500 		sts 101,r24
+  87               	.LBB53:
+  88               	.LBB51:
+  89               	.LBB50:
+  90               	.LBB49:
+  91               	.LM9:
+  92 0034 842F      		mov r24,r20
+  93               	.LVL2:
+  94               	/* #APP */
+  95               	 ;  83 "c:/winavr-20100110/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  96 0036 8A95      		1: dec r24
+  97 0038 01F4      		brne 1b
+  98               	 ;  0 "" 2
+  99               	/* #NOAPP */
+ 100 003a 00C0      		rjmp .L2
+ 101               	.LBE49:
+ 102               	.LBE50:
+ 103               	.LBE51:
+ 104               	.LBE53:
+ 105               	.LFE6:
+ 131               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 test.c
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:2      *ABS*:0000003f __SREG__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:5      *ABS*:00000034 __CCP__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\Shalin\AppData\Local\Temp/ccxnGGoc.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS
